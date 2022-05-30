@@ -8,6 +8,7 @@
 body{
     font-size: 16px;
     font-family: 'Noto Sans KR', sans-serif;
+    background-color: #f7f7f7;
 }
 .en_lang{
     font-family: "Poppins", sans-serif;
@@ -36,7 +37,7 @@ header{
     position: absolute;
     right: 80px;
     bottom: 6px;
-    
+    cursor: pointer;
 }
 .container > .lang_select{
     display: flex;
@@ -61,6 +62,7 @@ nav .mainmenu{
 
 .top_section{
     position: relative;
+    margin-bottom: 81px;
 }
 .mainslides{
     height: 730px;
@@ -159,6 +161,7 @@ main .news_section{
 .news_section p{
     text-align: center;
     font-size: 18px;
+    margin-bottom: 54px;
 }
 .news_section p span{
     font-weight: bold;
@@ -170,6 +173,7 @@ main .news_section{
 .news_section > .news_list li{
     width: 350px;
     height: 512px;
+    position: relative;
 }
 
 .news_section > .news_list .first_article{
@@ -198,5 +202,118 @@ main .news_section{
 .second_article .news_headline{
     width: 300px;
     height: 100px;
+    position: absolute;
     left: 40px;
+    bottom: 5px;
 }
+.third_article .news_headline{
+    width: 285px;
+    height: 85px;
+    position: absolute;
+    left: 40px;
+    bottom: 15px;
+}
+.news_section > p a{
+    font-size: 18px;
+    position: absolute;
+    left: 0;
+    margin-top: 27px;
+}
+
+
+
+.info_section{
+    width: 100%;
+    height: 377px;
+    margin-top: 81px;
+    background-color: #0173bc;
+}
+.info_section h3{
+    color: white;
+    font-size: 60px;
+    font-weight: 600;
+    text-align: center;
+    padding: 54px 0;
+}
+.info_section > .icons{
+    width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    color: white;
+}
+.info_section > .icons > li > span{
+    font-size: 54px;
+}
+.info_section > .icons > li > i{
+    font-size: 40px;
+    margin-bottom: 14px;
+}
+.info_section > .icons > li > p{
+    font-size: 24px;
+    margin: 27px 0;
+}
+.info_section > .icons > li > .number{
+    font-size: 30px;
+}
+.career_section{
+    width: 100%;
+    display: flex;
+}
+.career_section .career_text{
+    margin-top: 162px;
+    width: 791px;
+    height: 627px;
+    background-color: #0173bc;
+}
+.career_section .career_text h2{
+    color: white;
+    font-size: 60px;
+    padding-top: 189px;
+    text-align: center;
+}
+.career_section .career_text p{
+    color: white;
+    font-size: 24px;
+    line-height: 30px;
+    width: 465px;
+    height: 118px;
+    margin: 27px auto;
+}
+.career_section .plaid{
+    width: 1130px;
+    height: 780px;
+    margin-top: 81px;
+}
+.career_section .plaid li{
+    width: 373px;
+    height: 260px;
+    background-color: white;
+    box-sizing: border-box;
+}
+.career_section .plaid .text{
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.career_section .plaid .img_col1_2{
+    background-image: url(../images/linkedin-sales-solutions-pAtA8xe_iVM-unsplash.jpg);
+}
+.career_section .plaid .img_col1_3{
+    background-image: url(../images/christina-wocintechchat-com-swi1DGRCshQ-unsplash.jpg);
+}
+.career_section .plaid .img_col2_1{
+    background-image: url(../images/jimmy-nilsson-masth-LOtb6vKN3Ac-unsplash.jpg);
+}
+.career_section .plaid .img_col2_3{
+    background-image: url(../images/kevin-grieve-QCdRhVj7N8w-unsplash.jpg);
+}
+.career_section .plaid .img_col3_2{
+    background-image: url(../images/thisisengineering-raeng-TXxiFuQLBKQ-unsplash.jpg);
+}
+.career_section .plaid .img_col3_3{
+    background-image: url(../images/jason-goodman-LR5CYw3AQNo-unsplash.jpg);
+}
+
