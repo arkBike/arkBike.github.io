@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2차 프로젝트 - S&K 항공</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/e556c79e21.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -45,15 +46,15 @@
                         </ul>
                     </li>
                 </ul>
-                <div class="search">
-                    <i class="fa-solid fa-magnifying-glass"><button>search_btn</button></i>
-                </div>
-                <ul class="lang_select">
-                    <li>kr</li>
-                    <li>/</li>
-                    <li>en</li>
-                </ul>
             </nav>
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"><button class="hidden">search_btn</button></i>
+            </div>
+            <ul class="lang_select en_lang">
+                <li class="selected">kr</li>
+                <li>/</li>
+                <li>en</li>
+            </ul>
         </div>
     </header>        
 
@@ -62,7 +63,7 @@
         <div class="mainslides">
             <ul class="slides">
                 <li class="slide1 active">
-                    <h2 class="main_tt first">세계로 미래로 꿈을 현길로 만들어가는 기업</h2>
+                    <h2 class="main_tt first">세계로 미래로<br> 꿈을 현실로 만들어가는 기업</h2>
                 </li>
                 <li class="slide2">
                     <h2 class="main_tt second">항공기 날개 생산의 선두를 지향하는 기업</h2>
@@ -81,27 +82,27 @@
     
     <main>
         <section class="news_section">
-            <h3>press center</h3>
-            <p>s&amp;k 항공의 모든 소식을 전합니다.</p>
+            <h3 class="en_lang">press center</h3>
+            <p><span class="en_lang">S&amp;K</span> 항공의 모든 소식을 전합니다.</p>
             <ul class="news_list">
-                <li>
+                <li class="first_article">
                     <div class="news_headline">
-                        <h4>국내 첫 개최된 세계산림총회에 국산헬기 수리온 데뷔</h4>
+                        <h4>국내 첫 개최된 세계산림총회에<br> 국산헬기 수리온 데뷔</h4>
                     </div>                
                 </li>
-                <li>
+                <li class="second_article">
                     <div class="news_headline">
-                        <h4>해병대 상륙공격헬기, 국내 연구개발 확보…4500억 투자</h4>
+                        <h4>해병대 상륙공격헬기, 국내 연구개발<br> 확보…4500억 투자</h4>
                     </div>
                 </li>
-                <li>
+                <li class="third_article">
                     <div class="news_headline">
                         <h4>스탠리 에어버스 총괄대표 “한국은 주요 시장...우주항공 분야 협력 강화할 것”</h4>
                     </div>
                 </li>
             </ul>
             <p>
-                <a href="" class="secondary_btn">더보기<span>&rarr;</span></a>
+                <a href="#" class="secondary_btn">더보기<span>&rarr;</span></a>
             </p>
         </section>
     
@@ -171,12 +172,12 @@
     <footer>
         <div class="container">
             <div class="footer_contents">
-                <h4 class="footer_logo"><a href="index.html">icenhower</a></h4>
+                <h4 class="footer_logo"><a href="index.html">s&k</a></h4>
                 <ul class="helpful_link">
-                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#" class="en_lang">Contact us</a></li>
                     <li><a href="#">법적고지</a></li>
                     <li><a href="#">개인정보처리방침</a></li>
-                    <li><a href="#">Site map</a></li>
+                    <li><a href="#" class="en_lang">Site map</a></li>
                     <li><a href="#">이용약관</a></li>
                 </ul>
                 <ul class="social_logo">
@@ -205,7 +206,7 @@
                 </ul>
             </div>
             <hr>
-            <p>&copy; 2022 Copyright Icenhower oil &amp; gas. All right reserved.</p>
+            <p class="en_lang">&copy; 2022 Copyright Icenhower oil &amp; gas. All right reserved.</p>
         </div>
     </footer>
 </body>

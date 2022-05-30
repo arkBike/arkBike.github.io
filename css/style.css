@@ -1,2 +1,202 @@
 @import url(normalize.css);
 @import url(reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+
+/* font-family: 'Noto Sans KR', sans-serif; */
+
+body{
+    font-size: 16px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.en_lang{
+    font-family: "Poppins", sans-serif;
+}
+.dropdown{
+    display: none;
+}
+
+.hidden{
+    display: none;
+}
+
+
+header{
+    padding: 27px 0;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container > .search i{
+    position: absolute;
+    right: 80px;
+    bottom: 6px;
+    
+}
+.container > .lang_select{
+    display: flex;
+    gap: 10px;
+    text-transform: uppercase;
+}
+.container > .lang_select .selected{
+    font-weight: bold;
+}
+.logo a{
+    background: url(../images/logo.jpg) no-repeat;
+    display: inline-block;
+    text-indent: 9999em;
+    width: 170px;
+    height: 30px;
+}
+nav .mainmenu{
+    display: flex;
+    gap: 40px;
+}
+
+
+.top_section{
+    position: relative;
+}
+.mainslides{
+    height: 730px;
+    position: relative;
+    overflow: hidden;
+}
+.slides{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.slides li{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:no-repeat center top / cover;
+    z-index: 1;
+    transition: 0.5s;
+    opacity: 0;
+}
+.slides li.active{
+    opacity: 1;
+}
+.slides li:after{
+    content: '';
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    right: 50%;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.slides .slide1{
+    background-image:url(../images/A330\ Exterior.jpg);
+    left: 0;
+}
+.slides .slide2{
+    background-image:url(../images/IMG_0474.jpg);
+    left: 100%;
+}
+.slides .slide3{
+    background-image:url(../images/SAF2019_0307931.jpg);
+    left: 200%;
+}
+.slides > .slide1 > .main_tt{
+    color: white;
+    font-size: 60px;
+    line-height: 72px;
+    text-align: left;
+    width: 820px;
+    height: 160px;
+    margin-left: 108px;
+    position: absolute;
+    top: calc(50% - 80px);
+}
+.pager{
+    display: flex;
+    position: absolute;
+    bottom: 267px;
+    transform:translateX(-50%);
+    gap: 30px;
+    align-items: center;
+    z-index: 3;
+    left: 200px;
+}
+.pager a{
+    width: 40px;
+    height: 3px;
+    background-color: white;
+    text-indent: -9999em;
+    background-clip: padding-box;
+    display: inline-block;
+}
+.pager a.active{
+    background-color: #0173bc;
+}
+
+
+main .news_section{
+    width: 1170px;
+    margin: 0 auto;
+    position: relative;
+}
+.news_section h3{
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #1e417b;
+    text-align: center;
+}
+.news_section p{
+    text-align: center;
+    font-size: 18px;
+}
+.news_section p span{
+    font-weight: bold;
+}
+.news_section > .news_list{
+    display: flex;
+    gap: 60px;
+}
+.news_section > .news_list li{
+    width: 350px;
+    height: 512px;
+}
+
+.news_section > .news_list .first_article{
+    background-image: url(../images/cDLfmy11IwVD5ReaYVB.jpg);
+}
+
+.news_section > .news_list .second_article{
+    background-image: url(../images/상륙공격헬기_KAI_사보_2월호.jpg);
+}
+.news_section > .news_list .third_article{
+    background-image: url(../images/0866d498-0001-0004-0000-000000680590_w1528_r1.5242509161457212_fpx29.52_fpy55.jpg);
+}
+.news_headline{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 30px;
+}
+.first_article .news_headline{
+    width: 275px;
+    height: 53px;
+    position: absolute;
+    left: 40px;
+    bottom: 53px;
+}
+.second_article .news_headline{
+    width: 300px;
+    height: 100px;
+    left: 40px;
+}
