@@ -284,7 +284,7 @@ main .news_section{
 .career_section .plaid{
     width: 1130px;
     height: 780px;
-    margin-top: 81px;
+    margin: 81px 0;
 }
 .career_section .plaid li{
     width: 373px;
