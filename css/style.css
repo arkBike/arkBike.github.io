@@ -101,15 +101,25 @@ nav .mainmenu{
     z-index: -1;
 }
 .slides .slide1{
-    background-image:url(../images/A330\ Exterior.jpg);
+    background:url(../images/A330\ Exterior.jpg) no-repeat;
+    display: inline-block;
+    vertical-align: top;
+    background-size: cover;
+    background-position-y: -280px;
     left: 0;
 }
 .slides .slide2{
-    background-image:url(../images/IMG_0474.jpg);
+    background:url(../images/IMG_0474.jpg) no-repeat;
+    display: inline-block;
+    vertical-align: top;
+    background-size: cover;
     left: 100%;
 }
 .slides .slide3{
-    background-image:url(../images/SAF2019_0307931.jpg);
+    background:url(../images/SAF2019_0307931.jpg) no-repeat;
+    display: inline-block;
+    vertical-align: top;
+    background-size: cover;
     left: 200%;
 }
 .slides > .slide1 > .main_tt{
@@ -177,14 +187,20 @@ main .news_section{
 }
 
 .news_section > .news_list .first_article{
-    background-image: url(../images/cDLfmy11IwVD5ReaYVB.jpg);
+    background: url(../images/cDLfmy11IwVD5ReaYVB.jpg) no-repeat;
+    background-size: 812px 512px;
+    background-position-x: -130px;
 }
 
 .news_section > .news_list .second_article{
     background-image: url(../images/상륙공격헬기_KAI_사보_2월호.jpg);
+    background-size: 784px 517px;
+    background-position-x: -50px;
 }
 .news_section > .news_list .third_article{
     background-image: url(../images/0866d498-0001-0004-0000-000000680590_w1528_r1.5242509161457212_fpx29.52_fpy55.jpg);
+    background-size: 929px 609px;
+    background-position: -170px -95px;
 }
 .news_headline{
     color: white;
@@ -299,21 +315,33 @@ main .news_section{
 }
 .career_section .plaid .img_col1_2{
     background-image: url(../images/linkedin-sales-solutions-pAtA8xe_iVM-unsplash.jpg);
+    background-size: 379px 569px;
+    background-position-y: -40px;
 }
 .career_section .plaid .img_col1_3{
     background-image: url(../images/christina-wocintechchat-com-swi1DGRCshQ-unsplash.jpg);
+    background-size: 1154px 771px;
+    background-position: -590px -66px;
 }
 .career_section .plaid .img_col2_1{
-    background-image: url(../images/jimmy-nilsson-masth-LOtb6vKN3Ac-unsplash.jpg);
+    background: url(../images/jimmy-nilsson-masth-LOtb6vKN3Ac-unsplash.jpg) no-repeat;
+    background-size: 414px 621px;
+    background-position: -20px -148px;
 }
 .career_section .plaid .img_col2_3{
     background-image: url(../images/kevin-grieve-QCdRhVj7N8w-unsplash.jpg);
+    background-size: 689px 922px;
+    background-position: -40px -233px;
 }
 .career_section .plaid .img_col3_2{
     background-image: url(../images/thisisengineering-raeng-TXxiFuQLBKQ-unsplash.jpg);
+    background-size: 882px 589px;
+    background-position: -497px -65px;
 }
 .career_section .plaid .img_col3_3{
     background-image: url(../images/jason-goodman-LR5CYw3AQNo-unsplash.jpg);
+    background-size: 971px 647px;
+    background-position: -504px -125px;
 }
 
 .service_section{
@@ -328,15 +356,20 @@ main .news_section{
 .service_section .service_part_container > .service_img1{
     background-image: url(../images/737line.jpg);
     width: 33.3%;
+    background-size: 1179px 784px;
+    background-position-x: -329px;
 }
 .service_section .service_part_container > .service_img2{
     background-image: url(../images/KSLV-II_Nuri_Launch_2021-10-21.jpg);
     width: 33.3%;
+    background-size: 1384px 1069px;
+    background-position: -360px -50px;
 }
 .service_section .service_part_container > .service_img3{
     background-image: url(../images/bigstock-Assembling-Replacing-Engine-P-238839163.jpg);
-    background-repeat: no-repeat;
     width: 33.3%;
+    background-size: 1207px 799px;
+    background-position: -260px -15px;
 }
 .service_section .service_part_container li{
     color: white;
