@@ -18,3 +18,8 @@
 // 		header.stop().animate({height: headerHeight});
 // 	}
 // );
+
+
+$(document).ready(function(){
+    $('.mainslides').bxSlider()
+});
