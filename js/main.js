@@ -20,6 +20,7 @@
 // );
 
 
-$(document).ready(function(){
-    $('.mainslides').bxSlider()
+$('.mainslides').bxSlider({
+    controls: false,
+    pager: false
 });
