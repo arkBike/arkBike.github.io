@@ -194,13 +194,9 @@ main .news_section{
     position: relative;
     z-index: 1;
 }
-
-.news_section > .news_list .first_article{
-    background: url(../images/cDLfmy11IwVD5ReaYVB.jpg) no-repeat;
-    background-size: 812px 512px;
-    background-position-x: -130px;
+.news_section > .news_list > .first_article{
+    overflow: hidden;
 }
-
 .news_section > .news_list .second_article{
     background-image: url(../images/상륙공격헬기_KAI_사보_2월호.jpg);
     background-size: 784px 517px;
@@ -211,7 +207,7 @@ main .news_section{
     background-size: 929px 609px;
     background-position: -170px -95px;
 }
-.news_section > .news_list > li:after{
+.news_section > .news_list > li > img:after{
     content: '';
     display: block;
     background: rgba(0, 0, 0, 0.5);
@@ -221,6 +217,9 @@ main .news_section{
     top: 0;
     bottom: 0;
     z-index: -1;
+}
+.news_section > .news_list .first_article:hover img{
+    transform: scale(1.3);
 }
 .news_headline{
     color: white;
