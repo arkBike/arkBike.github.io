@@ -166,6 +166,8 @@ main .news_section{
 }
 .news_section > .news_list > li img{
     transition: 0.3s;
+    width: 350px;
+    height: 512px;
 }
 .news_section > .news_list li:hover img{
     transform: scale(1.2);
@@ -295,6 +297,7 @@ main .news_section{
 }
 .career_section .plaid .img_col1_2{
     background-image: url(../images/linkedin-sales-solutions-pAtA8xe_iVM-unsplash.jpg);
+    background-repeat: no-repeat;
     background-size: 372px 260px;
 }
 .career_section .plaid .img_col1_3{
