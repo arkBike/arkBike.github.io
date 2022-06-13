@@ -295,33 +295,27 @@ main .news_section{
 }
 .career_section .plaid .img_col1_2{
     background-image: url(../images/linkedin-sales-solutions-pAtA8xe_iVM-unsplash.jpg);
-    background-size: 379px 569px;
-    background-position-y: -40px;
+    background-size: 372px 260px;
 }
 .career_section .plaid .img_col1_3{
     background-image: url(../images/christina-wocintechchat-com-swi1DGRCshQ-unsplash.jpg);
-    background-size: 1154px 771px;
-    background-position: -590px -66px;
+    background-size: 372px 260px;
 }
 .career_section .plaid .img_col2_1{
     background: url(../images/jimmy-nilsson-masth-LOtb6vKN3Ac-unsplash.jpg) no-repeat;
-    background-size: 414px 621px;
-    background-position: -20px -148px;
+    background-size: 372px 260px;
 }
 .career_section .plaid .img_col2_3{
     background-image: url(../images/kevin-grieve-QCdRhVj7N8w-unsplash.jpg);
-    background-size: 689px 922px;
-    background-position: -40px -233px;
+    background-size: 372px 260px;
 }
 .career_section .plaid .img_col3_2{
     background-image: url(../images/thisisengineering-raeng-TXxiFuQLBKQ-unsplash.jpg);
-    background-size: 882px 589px;
-    background-position: -497px -65px;
+    background-size: 372px 260px;
 }
 .career_section .plaid .img_col3_3{
     background-image: url(../images/jason-goodman-LR5CYw3AQNo-unsplash.jpg);
-    background-size: 971px 647px;
-    background-position: -504px -125px;
+    background-size: 372px 260px;
 }
 
 .service_section{
