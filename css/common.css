@@ -23,24 +23,26 @@ header{
     justify-content: space-between;
     align-items: center;
 }
-.container > .search i{
-    position: absolute;
-    right: 80px;
-    top: 10px;
+.container > .right_nav{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.container > .right_nav > .search i{
     cursor: pointer;
 }
-.container > .lang_select{
+.container > .right_nav > .lang_select{
     display: flex;
     gap: 10px;
     text-transform: uppercase;
 }
-.container > .lang_select .selected{
+.container > .right_nav > .lang_select .selected{
     font-weight: bold;
 }
 .logo a{
     background: url(../images/logo.jpg) no-repeat;
     display: inline-block;
-    text-indent: 9999em;
+    text-indent: -9999em;
     width: 170px;
     height: 30px;
 }
@@ -71,7 +73,7 @@ footer{
 .footer_contents .footer_logo a{
     background: url(../images/footerLogo.gif) no-repeat;
     display: inline-block;
-    text-indent: 9999em;
+    text-indent: -9999em;
     width: 124px;
     height: 24px;
     margin-top: 108px;
