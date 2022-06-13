@@ -344,7 +344,7 @@ main .news_section{
 .service_section .service_part_container > .service_img3:hover img{
     transform: scale(1.3);
 }
-/* .service_section > .service_part_container li:hover:after{
+.service_section > .service_part_container li:hover:after{
     content: '';
     display: block;
     background: rgba(0, 0, 0, 0.5);
@@ -353,5 +353,5 @@ main .news_section{
     right: 0;
     top: 0;
     bottom: 0;
-    z-index: 0;
-} */
+    z-index: 1;
+}
