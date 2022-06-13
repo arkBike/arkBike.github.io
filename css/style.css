@@ -339,7 +339,7 @@ main .news_section{
     position: relative;
 }
 .service_section .service_part_container > li:hover img{
-    transform: scale(1.3);
+    transform: scale(1.2);
 }
 .service_section > .service_part_container li:hover:after{
     content: '';
