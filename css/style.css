@@ -217,7 +217,15 @@ main .news_section{
     left: 0;
     margin-top: 27px;
 }
-
+.news_section > p span{
+    transition: 0.3s;
+}
+.news_section > p:hover span{
+    margin-left: 20px;
+}
+.news_section > p:active span{
+    margin-left: 0;
+}
 
 
 .info_section{
