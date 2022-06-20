@@ -92,6 +92,10 @@ footer{
 .helpful_link a:hover{
     color: #0173bc;
 }
+.helpful_link{
+    columns: 2;
+    column-gap: 50px;
+}
 .footer_contents > .social_logo{
     display: flex;
     gap: 10px;
