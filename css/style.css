@@ -45,7 +45,7 @@
     display: inline-block;
     vertical-align: top;
     background-size: cover;
-    background-position-y: -280px;
+    background-position: center;
     left: 0;
 }
 .slides .slide2{
