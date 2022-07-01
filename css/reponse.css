@@ -25,6 +25,9 @@
         height: 160px;
         margin-left: 100px;
     }
+    .info_section > ul{
+        width: 80%;
+    }
     .secondary_btn{
         padding: 0 20px;
     }
