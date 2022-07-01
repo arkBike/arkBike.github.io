@@ -259,6 +259,7 @@ main .news_section{
 .info_section > .icons > li > .number{
     font-size: 24px;
 }
+
 .career_section{
     width: 100%;
     display: flex;
@@ -310,7 +311,7 @@ main .news_section{
     background-size: 372px 260px;
 }
 .career_section .plaid .img_col2_1{
-    background: url(../images/jimmy-nilsson-masth-LOtb6vKN3Ac-unsplash.jpg) no-repeat;
+    background-image: url(../images/jimmy-nilsson-masth-LOtb6vKN3Ac-unsplash.jpg);
     background-size: 372px 260px;
 }
 .career_section .plaid .img_col2_3{

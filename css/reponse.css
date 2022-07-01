@@ -40,4 +40,10 @@
     .third_article .news_headline{
         left: 35px;
     }
+    .career_section > .plaid li{
+        background-position: center;
+    }
+    footer > p{
+        margin: 54px 0px 0px 20px;
+    }
 }
