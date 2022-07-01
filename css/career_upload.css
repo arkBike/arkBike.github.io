@@ -23,9 +23,13 @@ main > .main_contents:after{
     
 }
 .main_contents > h2{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 60px;
     line-height: 72px;
     color: #fff;
     text-align: center;
     padding-top: 80px;
+    z-index: 3;
 }
