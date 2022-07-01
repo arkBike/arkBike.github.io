@@ -62,29 +62,7 @@
     background-size: cover;
     left: 200%;
 }
-.slides > .slide1 > .main_tt{
-    color: white;
-    font-size: 60px;
-    line-height: 72px;
-    text-align: left;
-    width: 820px;
-    height: 160px;
-    margin-left: 108px;
-    position: absolute;
-    top: calc(50% - 80px);
-}
-.slides > .slide2 > .main_tt{
-    color: white;
-    font-size: 60px;
-    line-height: 72px;
-    text-align: left;
-    width: 820px;
-    height: 160px;
-    margin-left: 108px;
-    position: absolute;
-    top: calc(50% - 80px);
-}
-.slides > .slide3 > .main_tt{
+.main_tt{
     color: white;
     font-size: 60px;
     line-height: 72px;
