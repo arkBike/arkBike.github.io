@@ -11,6 +11,7 @@ main > .main_contents{
     background-image: url(../images/cherrydeck-UpsEF48wAgk-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    z-index: 3;
 }
 main > .main_contents:after{
     content: '';
@@ -20,7 +21,7 @@ main > .main_contents:after{
     bottom: 0;
     right: 0;
     left: 0;
-    
+    z-index: -1;
 }
 .main_contents > h2{
     position: absolute;
@@ -29,7 +30,5 @@ main > .main_contents:after{
     font-size: 60px;
     line-height: 72px;
     color: #fff;
-    text-align: center;
     padding-top: 80px;
-    z-index: 3;
 }
