@@ -18,11 +18,21 @@ header{
 .container{
     width: 1170px;
     margin: 0 auto;
-    position: relative;
+}
+.d_flex{
     display: flex;
+}
+.j_content{
     justify-content: space-between;
+}
+.j_item{
     justify-items: center;
+}
+.a_item{
     align-items: center;
+}
+.position{
+    position: relative;
 }
 .container > .right_nav{
     display: flex;
@@ -151,7 +161,7 @@ footer > p{
     color: #949494;
     margin: 54px 0 0 365px;
 }
-footer > p:before{
+/* footer > p:before{
     content: '';
     display: block;
     border-color: #949494;
@@ -159,4 +169,4 @@ footer > p:before{
     border-width: 1px;
     border-style: solid;
     margin: 27px 0;
-}
+} */

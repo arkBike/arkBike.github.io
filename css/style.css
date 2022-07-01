@@ -119,8 +119,6 @@
 
 
 main .news_section{
-    width: 1170px;
-    margin: 0 auto;
     position: relative;
 }
 .news_section h3{
@@ -195,7 +193,7 @@ main .news_section{
     height: 53px;
     position: absolute;
     left: 40px;
-    bottom: 53px;
+    bottom: 50px;
 }
 .second_article .news_headline{
     width: 300px;
@@ -209,7 +207,7 @@ main .news_section{
     height: 85px;
     position: absolute;
     left: 40px;
-    bottom: 15px;
+    bottom: 20px;
 }
 .news_section > p a{
     font-size: 18px;
@@ -242,8 +240,6 @@ main .news_section{
     padding: 54px 0;
 }
 .info_section > .icons{
-    width: 1170px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -261,7 +257,7 @@ main .news_section{
     margin: 27px 0;
 }
 .info_section > .icons > li > .number{
-    font-size: 30px;
+    font-size: 24px;
 }
 .career_section{
     width: 100%;
