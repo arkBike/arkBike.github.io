@@ -43,7 +43,11 @@
     .career_section > .plaid li{
         background-position: center;
     }
-    footer > p{
-        margin: 54px 0px 0px 20px;
+    .footer_contents{
+        width: 100%;
+    }
+    footer hr.container{
+        margin: 0 20px;
+        width: 100%;
     }
 }
