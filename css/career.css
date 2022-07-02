@@ -91,3 +91,20 @@
 .inner_content .upload h3{
     font-size: 24px;
 }
+.inner_content i{
+    font-size: 60px;
+}
+.inner_content .search i{
+    color: #fff;
+}
+.inner_content a{
+    font-size: 12px;
+    color: #fff;
+    background-color: black;
+}
+.inner_content .search a{
+    padding: 4px 7px;
+}
+.inner_content .upload a{
+    padding: 4px 15px;
+}
