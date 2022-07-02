@@ -32,3 +32,55 @@ main > .main_contents:after{
     color: #fff;
     padding-top: 80px;
 }
+.outer_container{
+    width: 969px;
+    height: 459px;
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.inner_container{
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='10' ry='10' stroke='white' stroke-width='5' stroke-dasharray='2%2c 8' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+    width: 768px;
+    height: 348px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.inner_container i{
+    color: rgba(255, 255, 255, .6);
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+}
+.inner_container p{
+    font-size: 14px;
+    text-align: center;
+    line-height: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.inner_container .select_file{
+    color: #fff;
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 7px 25px;
+    border-radius: 3px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 200%);
+}
+.inner_container .select_file:hover {
+    background-color: black;
+    cursor: pointer;
+}
