@@ -240,7 +240,6 @@ main .news_section{
 
 .career_section{
     width: 100%;
-    display: flex;
 }
 .career_section .career_text{
     margin-top: 162px;
