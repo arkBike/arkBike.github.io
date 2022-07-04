@@ -106,12 +106,12 @@ main .news_section{
     color: #1e417b;
     text-align: center;
 }
-.news_section p{
+.news_section .press_text{
     text-align: center;
     font-size: 18px;
     margin-bottom: 54px;
 }
-.news_section p span{
+.news_section .press_text span{
     font-weight: bold;
 }
 .news_section > .news_list{
@@ -187,19 +187,19 @@ main .news_section{
     left: 40px;
     bottom: 20px;
 }
-.news_section > p a{
-    font-size: 18px;
-    position: absolute;
-    left: 0;
+.news_section > .secondary_btn_wrapper{
     margin-top: 27px;
 }
-.news_section > p span{
+.news_section > .secondary_btn_wrapper .secondary_btn{
+    font-size: 18px;
+}
+.news_section > .secondary_btn_wrapper span{
     transition: 0.3s;
 }
-.news_section > p:hover span{
+.news_section > .secondary_btn_wrapper:hover span{
     margin-left: 20px;
 }
-.news_section > p:active span{
+.news_section > .secondary_btn_wrapper:active span{
     margin-left: 0;
 }
 
