@@ -7,8 +7,6 @@
     .main_tt{
         font-size: 34px;
         line-height: 56px;
-        /* width: 400px;
-        height: 160px; */
         margin-left: 100px;
     }
     .info_section > ul{
@@ -93,7 +91,7 @@
         height: 56px;
     }
     .second_article .news_headline{
-        width: 418px;
+        width: 420px;
     }
     .third_article .news_headline{
         width: 400px;
@@ -294,13 +292,11 @@
     .main_tt{
         font-size: 18px;
         line-height: 24px;
-        width: 0;
-        height: 0;
-        margin-top: 0;
-        margin-left: 0;
+        margin: 0;
+        position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%);
+        transform: translate(-50%, -50%);
     }
     .slides .slide1{
         background-size: cover;
@@ -314,5 +310,54 @@
         top: 0;
         bottom: 0;
         z-index: -1;
+    }
+
+    .news_section > .news_list li{
+        width: 100%;
+        height: 350px;
+    }
+    .news_section > .news_list > li img{
+        width: 100%;
+        object-fit: cover;
+    }
+    .news_headline{
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 30px;
+        margin-left: 60px;
+    }
+
+    .info_section h3{
+        font-size: 30px;
+    }
+
+    .career_section{
+        width: 100%;
+        height: 945px;
+    }
+    .career_section .career_text h2{
+        font-size: 24px;
+    }
+    .career_section .career_text p{
+        font-size: 1rem;
+        line-height: 24px;
+    }
+    .career_section .plaid .text{
+        font-size: 18px;
+        height: 54px;
+    }
+    .career_section .plaid .img_col3_2{
+        background-position: center;
+    }
+    .career_section .plaid .img_col2_1{
+        background-position: center;
+    }
+
+    .service_section .service_part_container{
+        gap: 27px;
+    }
+    .service_section .service_part_container li{
+        height: 270px;
     }
 }
