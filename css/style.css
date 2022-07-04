@@ -122,7 +122,6 @@ main .news_section{
 }
 .news_section > .news_list li{
     width: 350px;
-    height: 512px;
     position: relative;
     z-index: 1;
     overflow: hidden;
@@ -264,7 +263,7 @@ main .news_section{
 }
 .career_section .plaid{
     width: 1130px;
-    height: 780px;
+    flex-wrap: wrap;
     margin: 81px 0;
 }
 .career_section .plaid li{
@@ -289,6 +288,7 @@ main .news_section{
 }
 .career_section .plaid .img_col2_1{
     background-image: url(../images/jimmy-nilsson-masth-LOtb6vKN3Ac-unsplash.jpg);
+    background-repeat: no-repeat;
     background-size: 372px 260px;
 }
 .career_section .plaid .img_col2_3{
@@ -297,6 +297,7 @@ main .news_section{
 }
 .career_section .plaid .img_col3_2{
     background-image: url(../images/thisisengineering-raeng-TXxiFuQLBKQ-unsplash.jpg);
+    background-repeat: no-repeat;
     background-size: 372px 260px;
 }
 .career_section .plaid .img_col3_3{

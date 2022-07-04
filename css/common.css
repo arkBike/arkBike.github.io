@@ -89,10 +89,6 @@ footer{
 }
 .footer_contents{
     width: 1170px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    justify-items: center;
 }
 .helpful_link li{
     padding-top: 10px;
