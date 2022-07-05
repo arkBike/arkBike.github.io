@@ -10,6 +10,7 @@ main > .main_contents{
     height: 962px;
     background-image: url(../images/cherrydeck-UpsEF48wAgk-unsplash.jpg);
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     z-index: 3;
 }
