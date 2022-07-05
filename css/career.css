@@ -27,7 +27,6 @@
     margin-top: 81px;
 }
 .top_promotion h2{
-    width: 597px;
     font-size: 30px;
     line-height: 48px;
 }
@@ -144,8 +143,7 @@
     margin-bottom: 135px;
 }
 .promotion_img{
-    width: 470px;
-    height: 405px;
+    width: calc(50% + 35px);
     text-indent: -9999em;
 }
 .promotion .first_promotion_img{
@@ -156,14 +154,15 @@
 .promotion .second_promotion_img{
     background: url(../images/xr-expo-ipDhOQ5gtEk-unsplash.jpg) no-repeat;
     background-size: cover;
+    background-position: center;
 }
 .promotion .third_promotion_img{
     background: url(../images/all-bong-L2oedF1AsH8-unsplash.jpg) no-repeat;
     background-size: cover;
+    background-position: center;
 }
 .text_box{
     width: 400px;
-    height: 405px;
     position: relative;
 }
 .text_box > .promotion_header, .primary_btn{
@@ -190,7 +189,6 @@
     top: 54px;
     margin-left: 30px;
     position: absolute;
-    top: 54px;
 }
 .text_box a{
     font-weight: 500;
