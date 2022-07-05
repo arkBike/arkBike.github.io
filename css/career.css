@@ -7,9 +7,10 @@
 .career_top_section{
     background: url(../images/hunters-race-MYbhN8KaaEc-unsplash.jpg) no-repeat;
     background-size: cover;
+    background-position: center;
     height: 730px;
 }
-.main_tt{
+.career_main_tt{
     position: absolute;
     left: 264px;
     bottom: 0;
@@ -18,7 +19,7 @@
     font-weight: bold;
     line-height: 81px;
 }
-.main_tt span{
+.career_main_tt span{
     font-size: 90px;
     font-weight: 400;
 }
@@ -26,8 +27,7 @@
     margin-top: 81px;
 }
 .top_promotion h2{
-    width: 666px;
-    height: 100px;
+    width: 597px;
     font-size: 30px;
     line-height: 48px;
 }
