@@ -390,6 +390,9 @@
     .inner_content{
         gap: 160px;
     }
+    .main_promotion_container .promotion{
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -423,16 +426,86 @@
         width: 432px;
         height: 407px;
     }
+
     .job_search{
         height: 674px;
     }
     .job_search h2{
         font-size: 24px;
+        padding-top: 54px;
     }
     .inner_content{
         flex-direction: column;
         align-items: center;
         gap: 54px;
+    }
+
+    .main_promotion h2{
+        font-size: 24px;
+    }
+    .main_promotion_container .promotion{
+        flex-direction: column;
+        width: 100%;
+        height: 350px;
+    }
+    .promotion_img{
+        height: calc(60% + 5px);
+        width: 100%;
+    }
+    .text_box{
+        height: 135px;
+    }
+    .text_box .promotion_header, .primary_btn{
+        font-size: 1rem;
+        margin-left: 60px;
+    }
+    .text_box h3{
+        top: 27px;
+    }
+    .text_box h3::before{
+        width: 50px;
+    }
+    .text_box a{
+        margin-left: 60px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .career_top_section{
+        height: 296px;
+    }
+    .career_main_tt{
+        font-size: 48px;
+    }
+    .career_main_tt span{
+        font-size: 36px;
+    }
+    .top_promotion{
+        margin-top: 54px;
+    }
+    .top_promotion h2{
+        font-size: 14px;
+    }
+    .top_promotion p{
+        font-size: 10px;
+    }
+    .top_promotion_img{
+        width: 370px;
+        height: 350px;
+    }
+    .job_search h2{
+        font-size: 18px;
+        width: 280px;
+    }
+    .inner_content{
+        padding-top: 108px;
+    }
+    .main_promotion h2{
+        font-size: 18px;
+        margin: 54px 0 27px 0;
+    }
+    .text_box .promotion_header, .primary_btn{
+        font-size: 14px;
     }
 }
 
