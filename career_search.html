@@ -65,15 +65,13 @@
     </header>    
 
     <section class="search_page_banner position">
-        <div class="search_container container d_flex">
+        <div class="search_container container">
             <h2 class="hidden">search_page</h2>
-            <form action="#" method="get" class="search_box">
+            <form action="#" method="get" class="search_box d_flex container">
                 <label for="job_search">
                     <input type="text" name="job_search" id="job_search" placeholder="검색어를 입력하세요" maxlength="20" class="search_bar">
                 </label>
-            </form>
-            <ul class="select">
-                <li class="contract d_flex a_item j_content">
+                <div class="selection contract d_flex a_item j_content">
                     <a href="#">계약</a>
                     <ul class="dropdown">
                         <li><a href="#">정규/공채</a></li>
@@ -81,8 +79,8 @@
                         <li><a href="#">아르바이트</a></li>
                     </ul>
                     <i class="fa-solid fa-chevron-down"></i>
-                </li>
-                <li class="job_group d_flex a_item j_content">
+                </div>
+                <div class="selection job_group d_flex a_item j_content">
                     <a href="#">대직군</a>
                     <ul class="dropdown">
                         <li><a href="#">연구개발</a></li>
@@ -91,18 +89,18 @@
                         <li><a href="#">경영지원</a></li>
                     </ul>
                     <i class="fa-solid fa-chevron-down"></i>
-                </li>
-                <li class="career d_flex a_item j_content">
+                </div>
+                <div class="selection career d_flex a_item j_content">
                     <a href="#">경력</a>
                     <ul class="dropdown">
                         <li><a href="#">경력</a></li>
                         <li><a href="#">신입</a></li>
                     </ul>
                     <i class="fa-solid fa-chevron-down"></i>
-                </li>
-            </ul>
+                </div>
+                <button class="search_btn en_lang">search</button>
+            </form>
         </div>
-        <a href="#" class="search_btn en_lang">search</a>
     </section>
 
     <main>
