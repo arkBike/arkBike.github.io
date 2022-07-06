@@ -165,6 +165,7 @@
 .text_box{
     width: 400px;
     position: relative;
+    background-color: #fff;
 }
 .text_box > .promotion_header, .primary_btn{
     font-size: 18px;
