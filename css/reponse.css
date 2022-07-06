@@ -381,6 +381,9 @@
     .career_top_section > .career_main_tt{
         left: 5%;
     }
+    .top_promotion_text h2 br{
+        display: none;
+    }
     .job_search{
         background-position: center;
     }
@@ -415,7 +418,7 @@
         line-height: normal;
     }
     .top_promotion p{
-        font-size: 12px;
+        font-size: 14px;
         margin-top: 20px;
     }
     .top_promotion_text{
@@ -487,7 +490,7 @@
         font-size: 14px;
     }
     .top_promotion p{
-        font-size: 10px;
+        font-size: 12px;
     }
     .top_promotion_img{
         width: 370px;
