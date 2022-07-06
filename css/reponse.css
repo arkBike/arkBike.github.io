@@ -516,6 +516,17 @@
 /****************** CAREER UPLOAD PAGE ******************/
 
 @media screen and (max-width: 1170px){
+    .selection{
+        width: calc(30% + 19px);
+    }
+    .job_vacancy_container{
+        padding: 0;
+    }
+}
+
+/****************** CAREER UPLOAD PAGE ******************/
+
+@media screen and (max-width: 1170px){
     .main_contents > h2{
         text-align: center;
     }
