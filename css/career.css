@@ -106,7 +106,8 @@
     background-color: black;
     display: block;
     text-align: center;
-    line-height: 26px;
+    line-height: 27px;
+    box-sizing: border-box;
     transition: 0.1s;
 }
 .inner_content a:hover{
