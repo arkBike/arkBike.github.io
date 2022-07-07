@@ -128,27 +128,59 @@ footer{
     border: 1px solid #0173bc;
 }
 .footer_contents > .family_site{
-    display: flex;
     width: 170px;
-    height: 26px;
-    justify-content: space-between;
-    align-items: center;
+    line-height: 27px;
     border: 1px solid #949494;
-}
-.footer_contents > .family_site li:not(:first-child, :last-child){
-    display: none;
-}
-.footer_contents > .family_site{
     margin-top: 81px;
+    position: relative;
 }
-.footer_contents > .family_site li:first-child a{
-    color: #949494;
+.footer_contents > .family_site > .selection_main_header a{
     padding-left: 10px;
-}
-.footer_contents > .family_site > li > i{
     color: #949494;
+}
+.footer_contents > .family_site .dropup{
+    box-sizing: border-box;
+    outline: 1px solid #c3c3c3;
+    background-color: #f7f7f7;
+    position: absolute;
+    width: 100%;
+    bottom: 100%;
+    padding-left: 10px;
+    display: none;
+    z-index: 3;
+}
+.family_site:hover .dropup{
+    display: block;
+}
+.footer_contents > .family_site .dropup li a{
+    font-size: 12px;
+    line-height: 27px;
+    display: block;
+}
+.footer_contents > .family_site .dropup li a:hover{
+    color: #0173bc;
+}
+.footer_contents > .family_site .dropup .second_header{
+    font-size: 1rem;
+    color: #1e417b;
+    position: relative;
+}
+.footer_contents > .family_site .dropup .second_header:after{
+    content: '';
+    position: absolute;
+    background-color: #001c25;
+    height: 2px;
+    width: 90%;
+    bottom: 0;
+    left: 0;
+}
+.fa-chevron-up{
+    color: #949494;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    transform: translateY(50%);
     cursor: pointer;
-    padding-right: 10px;
 }
 footer hr{
     margin: 27px 0;
