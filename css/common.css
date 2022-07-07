@@ -57,8 +57,31 @@ header{
     width: 170px;
     height: 30px;
 }
+nav{
+    position: relative;
+    background: linear-gradient(#fafafa 27px, rgba(255, 255, 255, 0.5) 27px);
+    overflow: hidden;
+    width: 570px;
+    white-space: nowrap;
+}
 nav .mainmenu{
     gap: 40px;
+    text-align: left;
+}
+nav .mainmenu > li{
+    width: 100px;
+}
+nav .mainmenu > li > a{
+    line-height: 27px;
+}
+nav .mainmenu > li > .dropdown{
+    position: absolute;
+    text-align: left;
+}
+
+nav .mainmenu .dropdown a{
+    line-height: 54px;
+    /* display: none; */
 }
 
 /*********************** FOOTER ***********************/
