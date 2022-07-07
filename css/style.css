@@ -275,6 +275,22 @@ main .news_section{
     justify-content: center;
     align-items: center;
 }
+.career_section .plaid .text a{
+    position: relative;
+}
+.career_section .plaid .text a:after{
+    content: '';
+    position: absolute;
+    background-color: #0173bc;
+    height: 2px;
+    width: 0;
+    bottom: -5px;
+    left: 0;
+    transition: 0.5s;
+}
+.career_section .plaid .text a:hover:after{
+    width: 100%;
+}
 .career_section .plaid .img_col1_2{
     background-image: url(../images/linkedin-sales-solutions-pAtA8xe_iVM-unsplash.jpg);
     background-repeat: no-repeat;
@@ -341,12 +357,14 @@ main .news_section{
     font-size: 60px;
     font-weight: bold;
     position: absolute;
-    color: #fff;
     z-index: 2;
     top: 50%;
     transform: translateY(-50%);
     transition: 0.3s;
     opacity: 0;
+}
+.service_section > .service_part_container li p a{
+    color: #fff;
 }
 .service_section > .service_part_container li:hover p{
     opacity: 1;
