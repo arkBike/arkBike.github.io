@@ -60,15 +60,6 @@ header{
 nav .mainmenu{
     gap: 40px;
 }
-nav{
-	left: 0;
-	right: 0;
-	top: 0;
-	overflow: hidden;
-}
-nav > ul > li { float:left; line-height:35px; position: relative;}
-nav > ul > li ul{ width:100%; position: absolute;}
-nav > ul > li ul li{white-space:nowrap;}
 
 /*********************** FOOTER ***********************/
 
