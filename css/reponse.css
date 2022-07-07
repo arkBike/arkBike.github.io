@@ -157,7 +157,7 @@
         flex-direction: column;
         width: 100%;
         height: 1025px;
-        background-color: #0173bc;
+        background-color: rgba(148, 148, 148, 0.2);
         margin-top: 81px;
         position: relative;
         align-items: center;
@@ -165,10 +165,12 @@
     .career_section .career_text{
         margin: 0;
         width: 100%;
+        background-color: rgba(1, 115, 188, 0);
     }
     .career_section .career_text h2{
         font-size: 30px;
         padding-top: 27px;
+        color: black;
     }
     .career_section .career_text p{
         font-size: 18px;
@@ -177,6 +179,7 @@
         padding: 0;
         width: 80%;
         line-height: 30px;
+        color: black;
     }
     .career_section .plaid .img_col1_3, .img_col2_3, .img_col3_3{
         display: none;
@@ -513,14 +516,55 @@
 }
 
 
-/****************** CAREER UPLOAD PAGE ******************/
+/****************** CAREER SEARCH PAGE ******************/
 
 @media screen and (max-width: 1170px){
     .selection{
-        width: calc(30% + 19px);
+        width: 30%;
+    }
+    .search_page_banner .search_box label{
+        margin: 0 auto;
     }
     .job_vacancy_container{
         padding: 0;
+    }
+}
+
+@media screen and (max-width: 960px){
+    .job_vacancy .job_vacancy_main_tt{
+        font-size: 18px;
+    }
+    .job_vacancy_container .Recruitment_notice_box h3{
+        font-size: 1rem;
+    }
+    .Recruitment_notice_box .read_more_btn{
+        right: 35px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .search_page_banner{
+        height: 162px;
+    }
+    .search_box :not(.search_btn){
+        display: none;
+    }
+    .search_page_banner .search_btn{
+        font-size: 12px;
+        width: 100px;
+        line-height: 27px;
+        bottom: 54px;
+    }
+    
+    .Recruitment_notice_box .read_more_btn{
+        right: 20px;
+    }
+    .job_vacancy_container .job_content2 h3{
+        width: 430px;
+        padding: 0;
+    }
+    .job_vacancy_container .Recruitment_notice_box p{
+        font-size: 12px;
     }
 }
 
