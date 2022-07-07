@@ -107,6 +107,11 @@
     left: 50%;
     transform: translateX(-50%);
     cursor: pointer;
+    transition: 0.3s;
+}
+.search_page_banner .search_btn:hover{
+    color: #0173bc;
+    background-color: #fff;
 }
 
 .job_vacancy .job_vacancy_main_tt{
