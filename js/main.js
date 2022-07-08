@@ -42,25 +42,19 @@ let wind = $(window),
 		}
 	});
 
+	let $header = $('header');
+
+	$(window).scroll(function(){
+		if($(this).scrollTop() > 0 ){
+			$header.addClass('sticky');
+		}
+		else{
+			$header.removeClass('sticky');
+		}
+	});
+
 
 	// $('.mainslides').slick({
         
     // });
-	$('.mainslides').slick();
-	// $window.scroll(function(){
-	// 	if($(this).scrolltop() > 100){
-	// 		if(!$header.hasClass('samll')){
-	// 			$header.addClass('samll');
-	// 		}
-	// 	}
-	// 	else{
-	// 		if($header.hasClass('samll')){
-	// 			$header.removeClass('samll');
-	// 		}
-	// 	}
-	// });
-
-// $('.mainslides').bxSlider({
-//     controls: false,
-//     pager: false
-// });
+	// $('.mainslides').slick();
