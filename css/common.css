@@ -2,6 +2,8 @@ body{
     font-size: 16px;
     font-family: 'Noto Sans KR', sans-serif;
     background-color: #fafafa;
+    overflow-y: scroll;
+    padding-top: 81px;
 }
 .en_lang{
     font-family: "Poppins", sans-serif;
@@ -13,7 +15,16 @@ body{
 /*********************** HEADER ***********************/
 
 header{
-    padding: 27px 0;
+    height: 27px;
+    background: linear-gradient(#fafafa 60px, rgba(255, 255, 255, 0.5) 60px);
+    padding: 30px 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left:0;
+	right: 0;
+    z-index: 5;
 }
 .container{
     width: 1170px;
@@ -57,31 +68,43 @@ header{
     width: 170px;
     height: 30px;
 }
-nav{
+
+/*********************** DROPDOWN MENU ***********************/
+
+nav > ul > li{
     position: relative;
-    background: linear-gradient(#fafafa 27px, rgba(255, 255, 255, 0.5) 27px);
-    overflow: hidden;
-    width: 570px;
-    white-space: nowrap;
-}
-nav .mainmenu{
-    gap: 40px;
-    text-align: left;
-}
-nav .mainmenu > li{
-    width: 100px;
+    padding: 0 25px;
 }
 nav .mainmenu > li > a{
     line-height: 27px;
+    position: relative;
+}
+nav .mainmenu > li > a:after{
+    content: '';
+    position: absolute;
+    background-color: #0d5b9d;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: -3px;
+    transition: 0.5s;
+}
+nav .mainmenu > li > a:hover:after{
+    width: 105%;
 }
 nav .mainmenu > li > .dropdown{
     position: absolute;
-    text-align: left;
+    width:100%;
+    padding-top: 5px;
 }
-
-nav .mainmenu .dropdown a{
+nav > ul > li ul li{
+    white-space: nowrap;
+}
+nav .mainmenu .dropdown{
     line-height: 54px;
-    /* display: none; */
+}
+.dropdown > li > a:hover{
+    color: #0d5b9d;
 }
 
 /*********************** FOOTER ***********************/
