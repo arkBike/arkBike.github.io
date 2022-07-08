@@ -26,6 +26,10 @@ header{
 	right: 0;
     z-index: 5;
 }
+header.sticky{
+    position: fixed;
+    top: 0;
+}
 .container{
     width: 1170px;
     margin: 0 auto;
@@ -46,9 +50,7 @@ header{
     position: relative;
 }
 .container > .right_nav{
-    display: flex;
     gap: 20px;
-    align-items: center;
 }
 .container > .right_nav > .search i{
     cursor: pointer;
@@ -67,6 +69,47 @@ header{
     text-indent: -9999em;
     width: 170px;
     height: 30px;
+}
+.main_search_modal{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 5;
+    display: none;
+}
+.main_search_modal.active{
+    display: block;
+}
+.main_search_modal > .main_search_box{
+    width: 570px;
+    position: absolute;
+    display: block;
+    top: 30%;
+    left: 50%;
+    height: 50px;
+    z-index: 5;
+    transform: translate(-50%, -50%);
+}
+.main_search_modal > .main_search_box .main_search_bar{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    background-color: transparent;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    font-size: 30px;
+}
+.fa-x{
+    position: absolute;
+    top: 27px;
+    right: 20%;
+    z-index: 6;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
 }
 
 /*********************** DROPDOWN MENU ***********************/
