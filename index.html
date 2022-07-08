@@ -8,6 +8,7 @@
     <meta name="keywords" content="portfolio, renewal, imitation, 포트폴리오, 구직용">
     <title>2차 프로젝트 - S&K 항공</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="css/slick.css"/>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reponse.css">
     <script src="https://kit.fontawesome.com/e556c79e21.js" crossorigin="anonymous"></script>
@@ -51,7 +52,7 @@
                     </li>
                 </ul>
             </nav>
-            <div class="right_nav">
+            <div class="right_nav d_flex">
                 <div class="search">
                     <i class="fa-solid fa-magnifying-glass"><button class="hidden">search_btn</button></i>
                 </div>
@@ -63,6 +64,14 @@
             </div>
         </div>
     </header>        
+    <div class="main_search_modal">
+        <form action="#" method="get" class="main_search_box d_flex">
+            <label for="main_job_search">
+                <input type="text" name="main_job_search" id="main_job_search" maxlength="20" class="main_search_bar">
+            </label>
+        </form>
+        <i class="fa-solid fa-x"></i>
+    </div>
 
     <section class="top_section">
         <h2 class="hidden">slides</h2>
@@ -224,8 +233,10 @@
         </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script> -->
+    <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
