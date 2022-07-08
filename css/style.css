@@ -112,11 +112,28 @@ main .news_section{
 .news_section .press_text span{
     font-weight: bold;
 }
-.news_section > .news_list{
+.news_section > .news_list, .secondary_btn_wrapper{
     display: flex;
     gap: 60px;
     justify-content: center;
     align-items: center;
+    opacity: 0;
+    transition: 0.5s ease-out;
+}
+.news_list.news_active{
+    opacity: 1;
+}
+.news_list.news_active .secondary_btn_wrapper{
+    opacity: 1;
+}
+.news_list.news_active .second_article{
+    transition-delay: 0.4s;
+}
+.news_list.news_active .third_article{
+    transition-delay: 0.6s;
+}
+.news_list.news_active .secondary_btn_wrapper{
+    transition-delay: 0.8s;
 }
 .news_section > .news_list li{
     width: 350px;
