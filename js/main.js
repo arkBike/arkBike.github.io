@@ -53,6 +53,21 @@ let wind = $(window),
 		}
 	});
 
+	let newsSection = document.querySelector('.news_list');
+	let newsSectionOST = newsSection.offsetTop + 200;
+	console.log(newsSectionOST);
+	
+
+	window.addEventListener('scroll', ()=>{
+		let windSCT = window.scrollY;
+		if(windSCT > newsSectionOST){
+			newsSection.classList.add('news_active');
+		}
+		else{
+			newsSection.classList.remove('news_active');
+		}
+	})
+
 
 	// $('.mainslides').slick({
         
