@@ -41,19 +41,19 @@
     z-index: -1;
 }
 .slides .slide1{
-    background:url(../images/A330\ Exterior.jpg) no-repeat;
+    background: url(../images/A330\ Exterior.jpg) no-repeat;
     vertical-align: top;
     background-size: cover;
     background-position: center;
 }
 .slides .slide2{
-    background:url(../images/IMG_0474.jpg) no-repeat;
+    background: url(../images/IMG_0474.jpg) no-repeat;
     vertical-align: top;
     background-size: cover;
     background-position: center;
 }
 .slides .slide3{
-    background:url(../images/SAF2019_0307931.jpg) no-repeat;
+    background: url(../images/SAF2019_0307931.jpg) no-repeat;
     vertical-align: top;
     background-size: cover;
     background-position: center;
