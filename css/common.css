@@ -82,6 +82,7 @@ header.sticky{
     background: rgba(0, 0, 0, 0.5);
     z-index: 5;
     display: none;
+    top: 0;
 }
 .main_search_modal.active{
     display: block;
@@ -90,7 +91,7 @@ header.sticky{
     width: 570px;
     position: absolute;
     display: block;
-    top: 30%;
+    top: 40%;
     left: 50%;
     height: 50px;
     z-index: 5;
