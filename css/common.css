@@ -272,3 +272,23 @@ footer .cpy_right{
     color: #949494;
     margin-bottom: 81px;
 }
+footer .btt{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    right: 50px;
+    bottom: 50px;
+    text-align: center;
+    background-color: #0d5b9d;
+    line-height: 50px;
+    color: #fff;
+    font-size: 20px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10;
+}
+footer .btt.show{
+    opacity: 1;
+    visibility: visible;
+}
