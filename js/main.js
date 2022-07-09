@@ -1,3 +1,5 @@
+
+// 상단 메뉴바
 let header = $('header'),
 	menu = header.find('nav > ul > li'),
 	headerHeight = header.outerHeight(),
@@ -19,6 +21,7 @@ menu.hover(
 	}
 );
 
+// 검색 모달
 $('.fa-magnifying-glass').click(function(){
 	$('.main_search_modal').fadeIn().addClass('active'); 
 	$('body').css({overflow:'hidden'});
@@ -29,47 +32,72 @@ $('.fa-x').click(function(){
 	$('body').css({overflow:'auto'});
 });
 
-let wind = $(window),
-	scrollHeader = $('header'),
-	headerOffsetTop = scrollHeader.offset().top;
+// 상단 메뉴바 고정
+let $header = $('header');
 
-	window.scroll(function(){
-		if($(this).scrollTop() >= headerOffsetTop){
-			scrollHeader.addClass('sticky');
-		}
-		else{
-			scrollHeader.removeClass('sticky');
-		}
+$(window).scroll(function(){
+	if($(this).scrollTop() > 0 ){
+		$header.addClass('sticky');
+	}
+	else{
+		$header.removeClass('sticky');
+	}
+});
+
+// 메인 슬라이드
+let mainsSlides = document.querySelector('.mainslides'),
+	slideContainer = mainsSlides.querySelector('.slides'),
+	slides = slideContainer.querySelectorAll('.slides_items')
+	slideCount = slides.length,
+	currentIdx = 0,
+	pager = mainsSlides.querySelector('.pager'),
+	pagerHTML = '';
+let timer;
+
+if(slideCount > 0){
+	slides.forEach(function(item, index){
+		item.style.left = `${index * 100}%`;
+		pagerHTML += `<a href="">${index}</a>`;
 	});
+	console.log(pagerHTML);
+}
+pager.innerHTML = pagerHTML;
+let pagerBtn = pager.querySelectorAll('a');
 
-	let $header = $('header');
+function goToSlide(idx){
+	slideContainer.style.left = `${idx * -100}%`;
+	currentIdx = idx;
 
-	$(window).scroll(function(){
-		if($(this).scrollTop() > 0 ){
-			$header.addClass('sticky');
-		}
-		else{
-			$header.removeClass('sticky');
-		}
-	});
+	for(pb of pagerBtn){
+        pb.classList.remove('pager_active');
+    }
+	pagerBtn[currentIdx].classList.add('pager_active');
 
-	let newsSection = document.querySelector('.news_list');
-	let newsSectionOST = newsSection.offsetTop + 200;
-	console.log(newsSectionOST);
-	
+	for(sl of slides){
+        sl.classList.remove('active');
+        slides[currentIdx].classList.add('active');
+    }
+}
+goToSlide(0);
 
-	window.addEventListener('scroll', ()=>{
-		let windSCT = window.scrollY;
-		if(windSCT > newsSectionOST){
-			newsSection.classList.add('news_active');
-		}
-		else{
-			newsSection.classList.remove('news_active');
-		}
-	})
+pagerBtn.forEach((item, index)=>{
+    item.addEventListener('click', (e)=>{
+        e.preventDefault()
+        goToSlide(index);
+    });
+})
 
+function startAutoSlide(){
+    timer = setInterval(()=>{
+        let nextSlide = (currentIdx + 1) % slideCount
+        goToSlide(nextSlide);
+    }, 5000);
+}
+startAutoSlide();
 
-	// $('.mainslides').slick({
-        
-    // });
-	// $('.mainslides').slick();
+mainsSlides.addEventListener('mouseover', ()=>{
+    clearInterval(timer);
+});
+mainsSlides.addEventListener('mouseout', ()=>{
+    startAutoSlide();
+});
