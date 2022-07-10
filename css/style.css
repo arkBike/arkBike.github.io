@@ -4,6 +4,50 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
 
+.popup{
+    padding: 20px;
+    position: fixed;
+    left: 50px;
+    top: 200px;
+    border: 3px solid #0d5b9d;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    background: #fff;
+    width: 600px;
+    color: #000;
+}
+.popup .popup_tt{
+    line-height: 27px;
+    font-size: 20px;
+}
+.popup ul{
+    font-size: 14px;
+    line-height: 27px;
+}
+.popup .caption_tt em{
+    color: #1e417b;
+    font-weight: bold;
+}
+.popup .details a{
+    color: #1e417b;
+}
+.popup .close_section{
+    font-size: 14px;
+}
+.close_section{
+    position: relative;
+}
+#close i{
+    color: #000;
+    position: absolute;
+    font-size: 14px;
+    top: 0;
+    right: 20px;
+}
+#close i:hover{
+    color: #0d5b9d;;
+}
+
 .top_section{
     position: relative;
     margin-bottom: 81px;
