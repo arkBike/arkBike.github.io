@@ -59,10 +59,22 @@ btn.click(function(e){
 	$('html, body').animate({scrollTop: 0}, '300');
 });
 
-let toggleBtn = $('.toggle_btn');
-
-toggleBtn.click(function(){
-	$('.response_toggle_menu').addClass('active_toggle');
+// 커리어 검색 페이지 드롭다운 메뉴
+$('.selected_list').click(function(event){
+	event.preventDefault();
+	event.stopPropagation();
+	$('.select_dropdown').stop().fadeOut('fast');
+	$(this).next('.select_dropdown').stop().fadeToggle('fast');
+	// $('.fa-chevron-down').addClass('rotate');
+});
+$('.select_dropdown li').click(function(e){
+	e.preventDefault();
+	let x = $(this).text();
+	$(this).parents('.select_dropdown').hide();
+	$(this).parents('.selection').find('.selected_list a').text(x);
+});
+$(document).click(function(){
+	$('.select_dropdown').hide();
 });
 
 // AOS
@@ -109,7 +121,7 @@ goToSlide(0);
 
 pagerBtn.forEach((item, index)=>{
     item.addEventListener('click', (e)=>{
-        e.preventDefault()
+        e.preventDefault();
         goToSlide(index);
     });
 })
