@@ -37,14 +37,14 @@
 .close_section{
     position: relative;
 }
-#close i{
+#close_btn i{
     color: #000;
     position: absolute;
     font-size: 14px;
     top: 0;
     right: 20px;
 }
-#close i:hover{
+#close_btn i:hover{
     color: #0d5b9d;;
 }
 
