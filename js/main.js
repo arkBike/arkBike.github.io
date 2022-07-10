@@ -1,4 +1,3 @@
-
 // 상단 메뉴바
 let header = $('header'),
 	menu = header.find('nav > ul > li'),
@@ -8,7 +7,7 @@ let header = $('header'),
 
 subMenu.each(function(){
 	if($(this).outerHeight() > newHeight){
-		newHeight = headerHeight +$(this).outerHeight();
+		newHeight = headerHeight + $(this).outerHeight();
 	}
 });
 
@@ -64,6 +63,13 @@ let toggleBtn = $('.toggle_btn');
 
 toggleBtn.click(function(){
 	$('.response_toggle_menu').addClass('active_toggle');
+});
+
+// AOS
+AOS.init({
+	offset: 400,
+	duration: 1000,
+	once: true
 });
 
 // 메인 슬라이드
