@@ -59,7 +59,7 @@ btn.click(function(e){
 	$('html, body').animate({scrollTop: 0}, '300');
 });
 
-// 커리어 검색 페이지 드롭다운 메뉴
+// 커리어 검색 페이지 셀렉트 메뉴
 $('.selected_list').click(function(event){
 	event.preventDefault();
 	event.stopPropagation();
