@@ -165,23 +165,21 @@ nav .mainmenu .dropdown{
     position: absolute;
     top: 0;
     right: 50%;
-    transform: translate(50%, -101%);
+    transform: translate(50%, 30%);
     z-index: 4;
     background: #fff;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
     transition: 0.5s;
+    display: none;
 }
 .response_toggle_menu .response_mainmenu li a{
     line-height: 54px;
 }
-.response_toggle_menu.active_toggle{
+.response_mainmenu li i{
     position: absolute;
-    top: 0;
-    right: 50%;
-    transform: translate(50%, 20%);
-}
-.toggle_btn.changed{
-    display: none;
+    right: 30px;
+    line-height: 54px;
+    cursor: pointer;
 }
 
 /*********************** FOOTER ***********************/
@@ -258,9 +256,6 @@ footer{
     padding-left: 10px;
     display: none;
     z-index: 3;
-}
-.family_site:hover .dropup{
-    display: block;
 }
 .footer_contents > .family_site .dropup li a{
     font-size: 12px;
