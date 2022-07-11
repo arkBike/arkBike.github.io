@@ -268,11 +268,19 @@ main .news_section{
     font-size: 40px;
     margin-bottom: 14px;
 }
-.info_section > .icons > li > p{
+.info_section > .icons > li > .info_text{
     font-size: 24px;
     margin: 27px 0;
 }
 .info_section > .icons > li > .number{
+    font-size: 24px;
+    display: inline;
+}
+.icons li span{
+    font-size: 24px;
+}
+.unit{
+    display: inline;
     font-size: 24px;
 }
 
