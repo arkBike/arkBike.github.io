@@ -157,7 +157,7 @@ mainsSlides.addEventListener('mouseout', ()=>{
 
 // 쿠키 및 팝업 모달 닫기
 let popup = document.querySelector('.popup');
-let popupCheck = document.querySelector('#popup_cb');
+let popupCheck = document.querySelector('#popup');
 let popupClose = document.querySelector('#close_btn');
 
 function setCookie(name, value, day){
