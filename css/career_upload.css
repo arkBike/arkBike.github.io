@@ -80,8 +80,8 @@ main > .main_contents:after{
     top: 50%;
     left: 50%;
     transform: translate(-50%, 200%);
-}
-.inner_container .select_file:hover{
-    background-color: black;
     cursor: pointer;
+}
+.inner_container .select_file:hover {
+    background-color: black;
 }
