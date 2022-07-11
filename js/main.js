@@ -32,7 +32,7 @@ $('.fa-x').click(function(){
 });
 
 $('.lang_select li').click(function(){
-	$('.lang_select .selection').toggleClass('selected');
+	$('.lang_select .lang_selection').toggleClass('selected');
 });
 
 // 상단 메뉴바 고정
