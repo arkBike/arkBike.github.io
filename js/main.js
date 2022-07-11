@@ -80,14 +80,27 @@ $(document).click(function(){
 	$('.select_dropdown, .dropup').hide();
 });
 
-// 반응형 메인 메뉴
+// 반응형 아코디언 메인 메뉴
 $('.toggle_open_btn').click(function(){
 	$('.response_toggle_menu').fadeToggle('fast');
 });
 
 $('.response_dropdown').hide();
-$("ul li a").click(function(){
+$('ul li a, i').click(function(){
     $(this).next().slideToggle(300);
+	$('ul li a').not(this).next().slideUp(300);
+});
+
+
+// 반응형 아코디언 메인 메뉴 고정
+let reponseToggleMenu = $('.response_toggle_menu');
+$(window).scroll(function(){
+	if($(this).scrollTop() > 0 ){
+		reponseToggleMenu.addClass('reponse_sticky');
+	}
+	else{
+		reponseToggleMenu.removeClass('reponse_sticky');
+	}
 });
 
 // AOS
