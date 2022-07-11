@@ -86,11 +86,20 @@ $('.toggle_open_btn').click(function(){
 });
 
 $('.response_dropdown').hide();
-$('ul li a, i').click(function(){
+$('.response_mainmenu li a').click(function(){
     $(this).next().slideToggle(300);
-	$('ul li a').not(this).next().slideUp(300);
+	$('.response_mainmenu li a').not(this).next().slideUp(300);
 });
 
+$('.response_mainmenu li a').click(function(e){
+	e.preventDefault();
+});
+
+$(window).resize(function(){
+	if($(window).width() > 768){
+		$('.response_toggle_menu').css({'display': 'none'});
+	}
+});
 
 // 반응형 아코디언 메인 메뉴 고정
 let reponseToggleMenu = $('.response_toggle_menu');

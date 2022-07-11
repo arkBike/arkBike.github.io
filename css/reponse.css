@@ -282,6 +282,7 @@
     .helpful_link{
         margin-top: 0;
         columns: 1;
+        text-align: center;
     }
     .helpful_link li:first-child{
         padding-top: 0;
@@ -475,6 +476,7 @@
         width: 100%;
     }
     .text_box{
+        width: 100%;
         height: 135px;
     }
     .text_box .promotion_header, .primary_btn{
