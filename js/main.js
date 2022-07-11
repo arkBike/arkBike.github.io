@@ -31,6 +31,10 @@ $('.fa-x').click(function(){
 	$('body').css({overflow: 'auto'});
 });
 
+$('.lang_select li').click(function(){
+	$('.lang_select .selection').toggleClass('selected');
+});
+
 // 상단 메뉴바 고정
 let $header = $('header');
 
@@ -76,19 +80,14 @@ $(document).click(function(){
 	$('.select_dropdown, .dropup').hide();
 });
 
-// 반응형 메인 메뉴 temp
+// 반응형 메인 메뉴
 $('.toggle_open_btn').click(function(){
 	$('.response_toggle_menu').fadeToggle('fast');
 });
 
-// $('.response_dropdown').hide();
-// $("ul li a").click(function(){
-//     $(this).next().slideToggle(300);
-// });
-$(function(){
-    $('.response_mainmenu').accordion({
-		collapsible: true
-    });
+$('.response_dropdown').hide();
+$("ul li a").click(function(){
+    $(this).next().slideToggle(300);
 });
 
 // AOS
