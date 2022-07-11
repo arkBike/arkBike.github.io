@@ -167,6 +167,40 @@ mainsSlides.addEventListener('mouseout', ()=>{
     startAutoSlide();
 });
 
+// Info section 넘버 애니메이션
+let counters = document.querySelector('.info_section');
+let counterNums = counters.querySelectorAll('.icons .number');
+
+let countersOST = counters.offsetTop - 400;
+let excuted = false;
+
+window.addEventListener('scroll', ()=>{
+	let winSCT = window.scrollY;
+	let speed = 30;
+	if(winSCT > countersOST){
+		if(!excuted){
+			counterNums.forEach(item => {
+				let targetNum = item.getAttribute('data-target');
+				if(targetNum > 100){
+					speed = 15;
+				}
+				else if(targetNum < 20 ){
+					speed = 100;
+				}
+				let num = 0;
+				let numAnime = setInterval(()=> {
+					++num;
+					item.innerText = num;
+					if(num == targetNum){
+						clearInterval(numAnime);
+					}
+				}, speed);
+			});
+			excuted = true;
+		}
+	}
+});
+
 // 쿠키 및 팝업 모달 닫기
 let popup = document.querySelector('.popup');
 let popupCheck = document.querySelector('#popup');
