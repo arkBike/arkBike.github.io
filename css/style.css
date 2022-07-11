@@ -13,7 +13,8 @@
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
     z-index: 10;
     background: #fff;
-    width: 600px;
+    max-width: 600px;
+    width: 80%;
     color: #000;
 }
 .popup .popup_tt{
