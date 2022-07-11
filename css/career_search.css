@@ -58,7 +58,6 @@ header{
 }
 .selection{
     width: calc(30% + 19px);
-    height: 54px;
     font-weight: 300;
     color: #949494;
     box-sizing: border-box;
@@ -75,10 +74,6 @@ header{
     top: 50%;
     transform: translateY(-50%);
 }
-/* .rotate{
-    transform-origin: center;
-    transform: rotate(90deg);
-} */
 .select_dropdown{
     background-color: #fff;
     width: 100%;
