@@ -90,6 +90,7 @@
     <div class="main_search_modal">
         <form action="#" method="get" class="main_search_box d_flex">
             <label for="main_job_search">
+                <span class="hidden">search_modal</span>
                 <input type="text" name="main_job_search" id="main_job_search" maxlength="20" class="main_search_bar">
             </label>
         </form>
@@ -161,14 +162,18 @@
                     <li><a href="#">이용약관</a></li>
                 </ul>
                 <ul class="social_logo">
-                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i><span class="hidden">linkedin</span></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i><span class="hidden">instagram</span></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i><span class="hidden">facebook</span></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i><span class="hidden">twitter</span></a></li>
                 </ul>
                 <div class="family_site">
-                    <div class="selection_main_header"><a href="#">관련 사이트</a></div>
-                        <ul class="dropup">
+                    <div class="selection_main_header">
+                        <a href="#">관련 사이트</a>
+                        <i class="fa-solid fa-chevron-up"></i>
+                    </div>
+                    <div class="dropup">
+                        <ul>
                             <li class="second_header">모회사</li>
                             <li><a href="#">KAI 한국항공우주주식회사</a></li>
                             <li class="second_header">협력회사</li>
@@ -177,7 +182,7 @@
                             <li><a href="#">신영중공업(주)</a></li>
                             <li><a href="#">연합정밀(주)</a></li>
                         </ul>
-                    <i class="fa-solid fa-chevron-up"></i>
+                    </div>
                 </div>
             </div>
             <hr>
@@ -201,6 +206,5 @@
 
         gtag('config', 'G-601MR7B6VF');
     </script>
-
 </body>
 </html>
