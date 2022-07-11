@@ -161,7 +161,6 @@ nav .mainmenu .dropdown{
 .response_toggle_menu{
     width: 100%;
     text-align: center;
-    height: 270px;
     position: absolute;
     top: 0;
     right: 50%;
@@ -180,6 +179,8 @@ nav .mainmenu .dropdown{
     right: 30px;
     line-height: 54px;
     cursor: pointer;
+    top: 20px;
+    display: block;
 }
 
 /*********************** FOOTER ***********************/

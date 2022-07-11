@@ -81,6 +81,16 @@ $('.toggle_open_btn').click(function(){
 	$('.response_toggle_menu').fadeToggle('fast');
 });
 
+// $('.response_dropdown').hide();
+// $("ul li a").click(function(){
+//     $(this).next().slideToggle(300);
+// });
+$(function(){
+    $('.response_mainmenu').accordion({
+		collapsible: true
+    });
+});
+
 // AOS
 AOS.init({
 	offset: 350,
