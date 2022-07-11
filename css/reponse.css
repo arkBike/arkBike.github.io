@@ -137,7 +137,7 @@
         flex-direction: column;
         align-items: center;
     }
-    .info_section > .icons > li > p{
+    .info_section > .icons > li > .info_text{
         margin: 0;
         font-size: 1rem;
         width: 70px;
@@ -159,6 +159,9 @@
         display: flex;
         gap: 100px;
         align-items: center;
+    }
+    .unit{
+        display: none;
     }
 
     .career_section{
