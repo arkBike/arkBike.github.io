@@ -25,6 +25,7 @@
 }
 .top_promotion{
     margin-top: 81px;
+    overflow: hidden;
 }
 .top_promotion h2{
     font-size: 30px;
@@ -126,6 +127,9 @@
     gap: 27px;
 }
 
+.main_promotion_container{
+    overflow: hidden;
+}
 .main_promotion h2{
     font-size: 30px;
     margin: 81px 0 54px 0;
