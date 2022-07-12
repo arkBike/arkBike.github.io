@@ -1,3 +1,11 @@
+// 파일 업로드
+let selectFile = document.querySelector('#select_file');
+let selectFileBtn = document.querySelector('#select_file_btn');
+
+function defaultBtnActive(){
+	selectFile.click();
+}
+
 // 상단 메뉴바
 let header = $('header'),
 	menu = header.find('nav > ul > li'),
